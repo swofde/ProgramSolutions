@@ -10,7 +10,7 @@ using System.ComponentModel.DataAnnotations;
 namespace ProgSolutions
 {
     public class FirstClass
-    {   
+    {
     }
 
     public class Role
@@ -44,7 +44,6 @@ namespace ProgSolutions
         [StringLength(10)]
         public string Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
-        [StringLength(3)]
         public int CountryCode { get; set; }
     }
 
@@ -52,13 +51,12 @@ namespace ProgSolutions
     {
         [Key]
         [StringLength(10)]
-        public string Gender { get; set; }
+        public string Gender_ { get; set; }
     }
 
     public class Country
     {
         [Key]
-        [StringLength(3)]
         public int CountryCode { get; set; }
         [StringLength(100)]
         public string CountryName { get; set; }
@@ -74,7 +72,6 @@ namespace ProgSolutions
         public string FirstName { get; set; }
         [StringLength(80)]
         public string LastName { get; set; }
-        [StringLength(3)]
         public int CountryCode { get; set; }
         [StringLength(10)]
         public string Gender { get; set; }
@@ -97,8 +94,8 @@ namespace ProgSolutions
         [Key]
         public int RaceKitOptionId { get; set; }
         [StringLength(80)]
-        public string RaceKitOption { get; set; }
-        public  float Cost { get; set; }
+        public string RaceKitOption_ { get; set; }
+        public float Cost { get; set; }
     }
 
     public class RegistrationStatus
@@ -106,7 +103,7 @@ namespace ProgSolutions
         [Key]
         public short RegistrationStatusId { get; set; }
         [StringLength(80)]
-        public string RegistrationStatus { get; set; }
+        public string RegistrationStatus_ { get; set; }
     }
 
     public class Registration

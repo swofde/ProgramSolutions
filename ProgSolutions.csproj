@@ -53,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="context.cs" />
+    <Compile Include="DataBase.cs" />
     <Compile Include="FirstClass.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -60,8 +62,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903090636341_Student_6DB.cs" />
+    <Compile Include="Migrations\201903090636341_Student_6DB.Designer.cs">
+      <DependentUpon>201903090636341_Student_6DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Migrations\201903090636341_Student_6DB.resx">
+      <DependentUpon>201903090636341_Student_6DB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
