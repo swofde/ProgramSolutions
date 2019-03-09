@@ -80,7 +80,7 @@ namespace ProgSolutions
         public string Gender { get; set; }
     }
 
-    public class Chrity
+    public class Charity
     {
         [Key]
         public int CharityId { get; set; }
@@ -98,7 +98,72 @@ namespace ProgSolutions
         public int RaceKitOptionId { get; set; }
         [StringLength(80)]
         public string RaceKitOption { get; set; }
-        []
+        public  float Cost { get; set; }
+    }
+
+    public class RegistrationStatus
+    {
+        [Key]
+        public short RegistrationStatusId { get; set; }
+        [StringLength(80)]
+        public string RegistrationStatus { get; set; }
+    }
+
+    public class Registration
+    {
+        [Key]
+        public int RegistrationId { get; set; }
+        public int RunnerId { get; set; }
+        public DateTime RegistationDatetime { get; set; }
+        public int RaceKitOptionId { get; set; }
+        public short RegistrationStatusId { get; set; }
         public float Cost { get; set; }
+        public int CharityId { get; set; }
+        public float SponsorshipTarget { get; set; }
+    }
+
+    public class Sponsorship
+    {
+        [Key]
+        public int SponsorShipId { get; set; }
+        [StringLength(150)]
+        public string SponsorName { get; set; }
+        public int RegistrationId { get; set; }
+        public float Amout { get; set; }
+    }
+
+    public class Marathon
+    {
+        [Key]
+        public short MarathonId { get; set; }
+        [StringLength(80)]
+        public string MarathonName { get; set; }
+        [StringLength(80)]
+        public string CityName { get; set; }
+        public int CountryCode { get; set; }
+        public Int16 Yearheld { get; set; }
+    }
+
+    public class Event
+    {
+        [Key]
+        public int EventId { get; set; }
+        [StringLength(50)]
+        public string EventName { get; set; }
+        public int EventTypeId { get; set; }
+        public short MarathonId { get; set; }
+        public DateTime StartDateTime { get; set; }
+        public float Cost { get; set; }
+        public Int16 MaxParticipants { get; set; }
+    }
+
+    public class RegistrationEvent
+    {
+        [Key]
+        public int RegistrationEventId { get; set; }
+        public int RegistrationId { get; set; }
+        public int EventId { get; set; }
+        public Int16 BibNumber { get; set; }
+        public int RaceTime { get; set; }
     }
 }
