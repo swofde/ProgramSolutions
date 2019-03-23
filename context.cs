@@ -35,5 +35,8 @@ namespace ProgSolutions
         public DbSet<Marathon> Marathons { get; set; }
         public DbSet<Event> Events { get; set; }
         public DbSet<RegistrationEvent> RegistrationEvents { get; set; }
+        public DbSet<Staff> Staffs { get; set; }
+        public DbSet<Position> Positions { get; set; }
+        public DbSet<Timesheet> Timesheets { get; set; }
     }
 }

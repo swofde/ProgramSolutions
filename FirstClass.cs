@@ -13,11 +13,44 @@ namespace ProgSolutions
     {
     }
 
+    public class Staff
+    {
+        [Key]
+        public int StaffId { get; set; }
+        public string Firstname { get; set; }
+        public string LastName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public char Gender { get; set; }
+        public int PositionId { get; set; }
+        public string Email { get; set; }
+        public string Comments { get; set; }
+    }
+
+    public class Position
+    {
+        [Key]
+        public string PositionId { get; set; }
+        public string PositionName { get; set; }
+        public string PositionDescription { get; set; }
+        public string PayPerion { get; set; }
+        public string PayRate { get; set; }
+    }
+
+    public class Timesheet
+    {
+        [Key]
+        public int TimesheetId { get; set; }
+        public int StaffId { get; set; }
+        public DateTime StartDateTime { get; set; }
+        public DateTime EndDateTime { get; set; }
+        public float PayAmount { get; set; }
+    }
+
     public class Role
     {
         [Key]
+        [Editable(true)]
         public int RoleId { get; set; }
-        [StringLength(50)]
         public string RoleName { get; set; }
     }
 

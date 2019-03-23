@@ -62,15 +62,67 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserClassPickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserClassPickerForm.Designer.cs">
+      <DependentUpon>UserClassPickerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201903090636341_Student_6DB.cs" />
     <Compile Include="Migrations\201903090636341_Student_6DB.Designer.cs">
       <DependentUpon>201903090636341_Student_6DB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903090728367_Student_6DB1.cs" />
+    <Compile Include="Migrations\201903090728367_Student_6DB1.Designer.cs">
+      <DependentUpon>201903090728367_Student_6DB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903090732298_Student_6DB2.cs" />
+    <Compile Include="Migrations\201903090732298_Student_6DB2.Designer.cs">
+      <DependentUpon>201903090732298_Student_6DB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903090738131_Student_6DB3.cs" />
+    <Compile Include="Migrations\201903090738131_Student_6DB3.Designer.cs">
+      <DependentUpon>201903090738131_Student_6DB3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903230525189_Student_6DB4.cs" />
+    <Compile Include="Migrations\201903230525189_Student_6DB4.Designer.cs">
+      <DependentUpon>201903230525189_Student_6DB4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903090636341_Student_6DB.resx">
       <DependentUpon>201903090636341_Student_6DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903090728367_Student_6DB1.resx">
+      <DependentUpon>201903090728367_Student_6DB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903090732298_Student_6DB2.resx">
+      <DependentUpon>201903090732298_Student_6DB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903090738131_Student_6DB3.resx">
+      <DependentUpon>201903090738131_Student_6DB3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903230525189_Student_6DB4.resx">
+      <DependentUpon>201903230525189_Student_6DB4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
